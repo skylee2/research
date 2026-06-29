@@ -19,3 +19,9 @@ venv/
 
 # Data files - large data should be managed separately
 Data/
+
+# External cosmology codes
+Codes/CLASS/
+Codes/CAMB/
+Codes/MontePython/
+Codes/Cobaya/
