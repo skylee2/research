@@ -11,7 +11,7 @@ attrs==26.1.0
 babel==2.18.0
 beautifulsoup4==4.15.0
 bleach==6.4.0
-camb==1.6.6
+-e git+https://github.com/cmbant/CAMB.git@b062e82beff0730bb6966ff09a39bc38a694f6e2#egg=camb
 certifi==2026.6.17
 cffi==2.0.0
 charset-normalizer==3.4.7
@@ -76,6 +76,7 @@ pandocfilters==1.5.1
 parso==0.8.7
 pexpect==4.9.0
 pillow==12.2.0
+planckpr4lensing @ file:///Users/skylee/Research/Data/Likelihoods/Cobaya/code/planck_PR4_lensing
 platformdirs==4.10.0
 portalocker==3.2.0
 prometheus_client==0.25.0
@@ -119,3 +120,4 @@ wcwidth==0.8.1
 webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
+wheel==0.47.0
