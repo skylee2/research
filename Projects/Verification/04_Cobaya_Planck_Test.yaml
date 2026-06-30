@@ -1,0 +1,51 @@
+# Cobaya Planck PR3 / Planck 2018 low-l likelihood test
+# Purpose:
+#   Check whether Cobaya can load CAMB and evaluate Planck 2018 low-l TT/EE.
+
+packages_path: /Users/skylee/Research/Data/Likelihoods/Cobaya
+
+theory:
+  camb:
+    extra_args:
+      lens_potential_accuracy: 1
+
+likelihood:
+  planck_2018_lowl.TT: null
+  planck_2018_lowl.EE: null
+
+params:
+  ombh2:
+    value: 0.02237
+    latex: \Omega_b h^2
+
+  omch2:
+    value: 0.1200
+    latex: \Omega_c h^2
+
+  H0:
+    value: 67.36
+    latex: H_0
+
+  tau:
+    value: 0.0544
+    latex: \tau
+
+  As:
+    value: 2.100e-9
+    latex: A_s
+
+  ns:
+    value: 0.9649
+    latex: n_s
+
+  YHe:
+    value: 0.2454
+    latex: Y_\mathrm{He}
+
+sampler:
+  evaluate:
+    N: 1
+
+output: /Users/skylee/Research/Data/Chains/Cobaya/Verification/planck_pr3_low_test
+
+force: true
